@@ -1,18 +1,18 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/ui/Header';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import SignUpPage from './pages/SignUpPage';
-import TransactionPage from './pages/TransactionPage';
+import { Routes, Route } from "react-router-dom";
+import Homepage from './pages/Homepage';
+import LoginPage from "./pages/Loginpage";
+import SignUpPage from "./pages/SignUpPage";
+import TransactionPage from "./pages/TransactionPage";
 import NotFound from './pages/NotFound';
-
+import Header from './components/ui/Header';
 function App() {
-  const authUser = true;
+  const authUser = true; // replace with actual auth check logic
   return (
     <>
-      {authUser && <Header />}
+     {authUser && 
+       <Header />}
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/transaction/:id" element={<TransactionPage />} />
