@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Homepage from './pages/Homepage';
+import HomePage from "./pages/Homepage";
 import LoginPage from "./pages/Loginpage";
 import SignUpPage from "./pages/SignUpPage";
 import TransactionPage from "./pages/TransactionPage";
@@ -9,10 +9,9 @@ function App() {
   const authUser = true; // replace with actual auth check logic
   return (
     <>
-     {authUser && 
-       <Header />}
+      {authUser && <Header />}
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/transaction/:id" element={<TransactionPage />} />
