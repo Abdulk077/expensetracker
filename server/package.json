@@ -3,24 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "type":"module",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@apollo/server": "^4.11.3",
-    "@graphql-tools/merge": "^9.0.17",
+    "@graphql-tools/merge": "^9.0.19",
     "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
     "connect-mongodb-session": "^5.0.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "graphql": "^16.10.0",
     "graphql-passport": "^0.6.8",
-    "mongoose": "^8.9.7",
+    "mongoose": "^8.10.0",
     "passport": "^0.7.0"
   },
   "devDependencies": {
