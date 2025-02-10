@@ -47,7 +47,7 @@ const server = new ApolloServer({
 // Ensure we wait for our server to start
 await server.start();
 app.use(
-  "/",
+  "/graphql",
   cors({
     origin: "http://localhost",
     credentials: true, // enable cookies
