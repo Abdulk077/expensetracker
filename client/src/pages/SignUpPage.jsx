@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import RadioButton from "../components/RadioButton";
 import InputField from "../components/InputField";
 import { useMutation } from "@apollo/client";
-import { SIGN_UP } from "../graphql/mutations/user.mutation";
+import { SIGN_UP } from "../graphql/mutations/user.muatation";
 import toast from "react-hot-toast";
 
 const SignUpPage = () => {
