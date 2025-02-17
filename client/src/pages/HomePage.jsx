@@ -7,7 +7,7 @@ import TransactionForm from "../components/TransactionForm";
 import { MdLogout } from "react-icons/md";
 import toast from "react-hot-toast";
 import { useMutation, useQuery } from "@apollo/client";
-import { LOGOUT } from "../graphql/mutations/user.mutation";
+import { LOGOUT } from "../graphql/mutations/user.muatation";
 import { GET_TRANSACTION_STATISTICS } from "../graphql/queries/transaction.query";
 
 import { GET_AUTHENTICATED_USER } from "../graphql/queries/user.query";
@@ -94,7 +94,7 @@ const HomePage = () => {
             Spend wisely, track wisely
           </p>
           <img
-            src={authUserData?.authUserData.profilePicture}
+            src={authUserData?.authUser.profilePicture}
             className="w-11 h-11 rounded-full border cursor-pointer"
             alt="Avatar"
           />

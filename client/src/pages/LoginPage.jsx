@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import InputField from "../components/InputField";
 import { useMutation } from "@apollo/client";
-import { LOGIN } from "../graphql/mutations/user.mutation";
+import { LOGIN } from "../graphql/mutations/user.muatation";
 import toast from "react-hot-toast";
 
 const LoginPage = () => {

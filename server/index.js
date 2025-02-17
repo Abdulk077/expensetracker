@@ -62,7 +62,7 @@ await server.start();
 app.use(
   "/graphql",
   cors({
-    origin: "http://localhost",
+    origin: "http://localhost:3000",
     credentials: true, // enable cookies
   }),
   express.json(), // parse JSON bodies into req.body
