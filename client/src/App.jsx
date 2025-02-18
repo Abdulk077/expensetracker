@@ -10,10 +10,9 @@ import { GET_AUTHENTICATED_USER } from "./graphql/queries/user.query";
 import { Toaster } from "react-hot-toast";
 
 function App() {
-  const { loading, data } = useQuery(GET_AUTHENTICATED_USER);
+  const { loading,error, data } = useQuery(GET_AUTHENTICATED_USER);
 
-  if (loading) return null;
-
+  if (loading) return ;
   return (
     <>
       {data?.authUser && <Header />}

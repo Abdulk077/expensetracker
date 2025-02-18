@@ -80,7 +80,7 @@ const Card = ({ transaction, authUser }) => {
         <div className="flex justify-between items-center">
           <p className="text-xs text-black font-bold">21 Sep, 2001</p>
           <img
-            src={"authUser?.profilePicture"}
+            src={authUser?.profilePicture}
             className="h-8 w-8 border rounded-full"
             alt=""
           />
